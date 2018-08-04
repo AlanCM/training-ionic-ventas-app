@@ -1,0 +1,52 @@
+<!--
+  Generated template for the FormularioPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Prospectos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <!-- Contenido-->
+<form (ngSubmit)="save()">
+
+  <ion-item>
+    <ion-label> Nombre </ion-label>
+    <ion-input type="text" [(ngModel)]="contact.name" name="Name"></ion-input>
+  </ion-item>
+  <!-- Email -->
+  <ion-item>
+      <ion-label> E-mail </ion-label>
+      <ion-input type="text" [(ngModel)]="contact.email" name="Email"></ion-input>
+  </ion-item>
+  <!-- Compañia  -->
+  <ion-item>
+    <ion-label> Empresa </ion-label>
+    <ion-input type="text" [(ngModel)]="contact.empresa" name="Empresa"></ion-input>
+</ion-item>
+  <button type="submit" ion-button block>Agregar</button>
+</form>
+
+<ion-card>
+  <!-- Header -->
+  <ion-card-header>Mis Contactos</ion-card-header>
+  <!-- Contenido -->
+  <ion-card-content>
+    <!-- Datos guardados -->
+    <ion-item-group *ngFor="let c of contacts">
+        <ion-item> 
+          <ion-icon name="happy"></ion-icon>
+          {{c.name}} : {{c.email}}
+        </ion-item>
+    </ion-item-group>
+
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
