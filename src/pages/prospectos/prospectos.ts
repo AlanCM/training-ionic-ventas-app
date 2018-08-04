@@ -34,13 +34,16 @@ contacts : contact[];
 }
 
 class contact{
-  name : String;
-  email: String;
+  
+  name    : String;
+  email   : String;
+  empresa : String;
   
   constructor(){
-    this.name = "";
-    this.email= "";
+    this.name     = "";
+    this.email    = "";
+    this.empresa  = ""
   }
 
-  }
+}
 
