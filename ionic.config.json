@@ -1,5 +1,7 @@
 {
   "name": "ventas-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
