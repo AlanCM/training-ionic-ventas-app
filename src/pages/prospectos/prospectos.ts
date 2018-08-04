@@ -42,7 +42,7 @@ class contact{
   constructor(){
     this.name     = "";
     this.email    = "";
-    this.empresa  = ""
+    this.empresa  = "";
   }
 
 }
